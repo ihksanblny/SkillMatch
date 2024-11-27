@@ -14,7 +14,6 @@
 - **Tailwind CSS**: Utility-first CSS framework for styling the page.
 - **Framer Motion**: For creating smooth animations and hover effects.
 - **AOS (Animate on Scroll)**: For adding scroll-based animations to elements.
-- **Swiper**: For displaying sliding cards in certain sections of the page.
 
 ## Installation
 
