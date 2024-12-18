@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from 'framer-motion';
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const LandingPage = () => {
   useEffect(() => {
@@ -44,66 +44,111 @@ const LandingPage = () => {
         </div>
       </section>
 
+      <section class="highlights py-20 bg-gray-50">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-semibold mb-8" data-aos="fade-up">Kenapa Memilih Kami?</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+      <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="text-6xl text-blue-500 mb-4">
+          <i class="fas fa-clock" style={{ color: "#1d4e7e" }}></i> 
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Cepat</h3>
+        <p class="text-gray-600">Akses freelancer dalam hitungan menit.</p>
+      </div>
+      <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="400">
+        <div class="text-6xl text-green-500 mb-4">
+        <i class="fa-solid fa-shield-halved" style={{ color: "#1d4e7e" }}></i> 
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Aman</h3>
+        <p class="text-gray-600">Transaksi dijamin aman dengan sistem pembayaran terpercaya.</p>
+      </div>
+      <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="600">
+        <div class="text-6xl text-yellow-500 mb-4">
+        <i class="fa-solid fa-cubes" style={{ color: "#1d4e7e" }}></i> 
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Beragam</h3>
+        <p class="text-gray-600">Ribuan pilihan kategori layanan yang dapat disesuaikan dengan kebutuhan Anda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* Kategori Section dengan Animasi dan Hover Effects */}
       <section className="py-24 bg-gray-50">
   <div className="container mx-auto text-center">
     <h2 className="text-4xl font-semibold mb-10" data-aos="fade-up">
-      Kategori Layanan
+      Popular Categories
     </h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       {/* Web Development Card */}
-      <motion.div
-        className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105"
+      <div
+        className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition"
         data-aos="fade-up"
         data-aos-delay="200"
-        whileHover={{ scale: 1.05 }}
       >
-        <div className="relative">
-          <img
-            src="https://api.deepai.org/job-view-file/202e1459-999c-44ef-af40-5f7abf7d34ed/outputs/output.jpg?art-image=true"
-            alt="Web Development"
-            className="w-full h-48 object-cover rounded-t-xl rounded-b-xl"
-          />
-        </div>
-        <h3 className="text-xl font-semibold mb-4">Web Development</h3>
-        <p className="text-gray-600">Bangun aplikasi dan situs web responsif dengan kualitas terbaik.</p>
-      </motion.div>
-
+        <img
+          src="https://images.unsplash.com/photo-1610989001873-03968eed0f08?q=80&w=2490&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Web Development"
+          className="w-full h-48 object-cover rounded-t-lg rounded-b-lg mb-2"
+          data-aos="zoom-in"
+        />
+        <h3 className="text-xl font-bold mb-2">Web Development</h3>
+        <p className="text-gray-600 mb-4">
+          Bangun aplikasi dan situs web responsif dengan kualitas terbaik.
+        </p>
+        <button
+          className="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
+          data-aos="fade-right"
+        >
+          Jelajahi Kategori
+        </button>
+      </div>
       {/* Design Grafis Card */}
-      <motion.div
-        className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105"
+      <div
+        className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition"
         data-aos="fade-up"
         data-aos-delay="400"
-        whileHover={{ scale: 1.05 }}
       >
-        <div className="relative">
-          <img
-            src="https://api.deepai.org/job-view-file/46d5049d-3cd2-4656-bb94-c0d75b53b1ec/outputs/output.jpg?art-image=true"
-            alt="Design Grafis"
-            className="w-full h-48 object-cover rounded-t-xl rounded-b-xl"
-          />
-        </div>
-        <h3 className="text-xl font-semibold mb-4">Design Grafis</h3>
-        <p className="text-gray-600">Desain logo, branding, dan visual kreatif lainnya.</p>
-      </motion.div>
-
+        <img
+          src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?q=80&w=2652&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Graphic Design"
+          className="w-full h-48 object-cover rounded-t-lg rounded-b-lg mb-2"
+          data-aos="zoom-in"
+        />
+        <h3 className="text-xl font-bold mb-2">Graphic Designers</h3>
+        <p className="text-gray-600 mb-4">
+          Desain logo, branding, dan materi promosi yang menarik dan kreatif.
+        </p>
+        <button
+          className="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
+          data-aos="fade-right"
+        >
+          Jelajahi Kategori
+        </button>
+      </div>
       {/* Penulisan Card */}
-      <motion.div
-        className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-transform transform hover:scale-105"
+      <div
+        className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition"
         data-aos="fade-up"
         data-aos-delay="600"
-        whileHover={{ scale: 1.05 }}
       >
-        <div className="relative">
-          <img
-            src="https://api.deepai.org/job-view-file/9895e7ab-9f10-44da-a6cf-bd87f3f3d9d1/outputs/output.jpg?art-image=true"
-            alt="Penulisan"
-            className="w-full h-48 object-cover rounded-t-xl rounded-b-xl"
-          />
-        </div>
-        <h3 className="text-xl font-semibold mb-4">Penulisan</h3>
-        <p className="text-gray-600">Penulisan artikel dan konten berkualitas untuk kebutuhan bisnis Anda.</p>
-      </motion.div>
+        <img
+          src="https://images.unsplash.com/photo-1670836037273-1da88ca47acd?q=80&w=2530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Writing"
+          className="w-full h-48 object-cover rounded-t-lg rounded-b-lg mb-2"
+          data-aos="zoom-in"
+        />
+        <h3 className="text-xl font-bold mb-2">Content Writers</h3>
+        <p className="text-gray-600 mb-4">
+          Penulisan artikel dan konten berkualitas untuk kebutuhan bisnis Anda.
+        </p>
+        <button
+          className="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
+          data-aos="fade-right"
+        >
+          Jelajahi Kategori
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -168,6 +213,23 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section className="partners py-20 bg-gray-100">
+  <div className="container mx-auto text-center">
+    <h2 className="text-4xl font-semibold mb-6">Dipercaya oleh Partner Kami</h2>
+    <p className="text-gray-600 mb-10">
+      Kami dipercaya oleh perusahaan dan komunitas ternama di berbagai bidang.
+    </p>
+    <div className="flex justify-center items-center flex-wrap gap-8">
+      <i className="fab fa-microsoft text-blue-600 text-4xl hover:text-blue-800 transition duration-300"></i>
+      <i className="fab fa-apple text-gray-900 text-4xl hover:text-gray-600 transition duration-300"></i>
+      <i className="fab fa-google text-red-600 text-4xl hover:text-red-800 transition duration-300"></i>
+      <i className="fab fa-amazon text-yellow-600 text-4xl hover:text-yellow-800 transition duration-300"></i>
+      <i className="fab fa-facebook text-blue-600 text-4xl hover:text-blue-800 transition duration-300"></i>
+      <i className="fab fa-steam text-blue-900 text-4xl hover:text-blue-600 transition duration-300"></i>
     </div>
   </div>
 </section>
