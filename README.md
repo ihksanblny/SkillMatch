@@ -21,7 +21,7 @@ To run this project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/skillmatch.git
+   git clone https://github.com/ihksanblny/skillmatch.git
 2. Navigate into the project directory:
     ```bash
     cd skillmatch
